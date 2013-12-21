@@ -23,7 +23,7 @@ $config['mongo_return'] = 'array'; // Set to object
 // When you run an insert/update/delete how sure do you want to be that the database has received the query?
 // safe = the database has receieved and executed the query
 // fysnc = as above + the change has been committed to harddisk <- NOTE: will introduce a performance penalty
-$config['mongo_query_safety'] = 'safe';
+$config['mongo_query_safety'] = 'w';
 
 // Supress connection error password display
 $config['mongo_supress_connect_error'] = TRUE;

@@ -1404,7 +1404,7 @@ class Mongo_db {
 		
 		try
 		{
-			$this->connection = new Mongo($this->connection_string, $options);
+			$this->connection = new MongoClient($this->connection_string, $options);
 			$this->db = $this->connection->{$this->dbname};
 			return ($this);	
 		} 
